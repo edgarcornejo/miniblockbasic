@@ -1,10 +1,10 @@
 # Mini Block Basic
 
-Theme Wordpress en bloques en desarrollo.
+Theme WordPress en bloques en **desarrollo**.
 
 ## Desarrollo
 
-Actualmente no se esta utilizando el theme.json para los estilos. Todos los estilos se definden en el archivo style.css.
+Actualmente no se esta utilizando el theme.json para los estilos. Todos los estilos se definen en el archivo style.css.
 
 ## Herramientas
 
