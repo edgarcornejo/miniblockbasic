@@ -1,0 +1,201 @@
+/*
+Theme Name: Mini Block Basic
+Author: Edgar Cornejo
+Description: Un tema básico para iniciar a crear tu web.
+Author URI: https://www.edgarcornejo.com
+version: 1.0
+*/
+@charset "UTF-8";
+
+@import "reset","variables","fonts" ;
+
+/* Colores */
+$color-silver-50: rgb(247, 247, 247);
+$color-silver-100: rgb(240, 240, 240);
+$color-silver-200: rgb(227, 227, 227);
+$color-silver-300: rgb(209, 209, 209);
+$color-silver-400: rgb(195, 195, 195);
+$color-silver-500: rgb(170, 170, 170);
+$color-silver-600: rgb(150, 150, 150);
+$color-silver-700: rgb(129, 129, 129);
+$color-silver-800: rgb(106, 106, 106);
+$color-silver-900: rgb(88, 88, 88);
+$color-silver-950: rgb(51, 51, 51);
+
+/* Estilos ScrollBar */
+html {
+	scrollbar-color: $color-silver-950 $color-silver-50;
+	scrollbar-width: thin;
+}
+
+/* Estilos de selección */
+::selection {
+	color: $color-silver-50;
+	background-color: $color-silver-400;
+}
+
+/* Enlaces */
+a {
+  color: $color-silver-950;
+  transition: all .4s ease;
+  text-decoration: underline;
+  &:hover {
+    color: $color-silver-500;
+		text-decoration: none;
+  }
+}
+
+/* Títulos */
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1.2;
+	padding-block: $onespace;
+	margin-bottom: $onespace;
+}
+
+/* Estilos de Body */
+body {
+	font-size: clamp(14px, 1vw, 1vw);
+	font-weight: 200;
+	line-height: 1.4;
+	hyphens: none;
+	font-family: "Manrope", sans-serif;
+	font-optical-sizing: auto;
+	color: $color-silver-700;
+	background-color: $color-silver-50;
+}
+
+/* Conteneddor main principal */
+main {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	section {
+		padding-block: $twospace;
+	}
+	article {
+		width: 97%;
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+	header {
+		margin-block: $onespace;
+		h2 {
+			font-size: clamp(20px, 1.6vw, 1.6vw);
+			font-weight: 300;
+		}
+	}
+	p {
+		margin-bottom: $onespace;
+	}
+}
+
+#site-header {
+	background-color: $color-silver-100;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: $onespace;
+	h1 {
+		font-size: clamp(24px, 2vw, 2vw);
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+#site-header nav {
+	a {
+		text-transform: uppercase;
+		font-weight: 600;
+		transition: all .4s ease;
+		&:hover {
+			color: $color-silver-500;
+		}
+	}
+}
+
+#description {
+	background-color: $color-silver-200;
+	header {
+		h2{
+			text-align: center;
+		}
+	}
+	p {
+		max-inline-size: none;
+		text-align: center;
+	}
+}
+
+#services {
+	h3 {
+		background-color: $color-silver-300;
+		color: $color-silver-950;
+		text-align: center;
+	}
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: $twospace;
+	}
+	li {
+		list-style: none;
+		padding: $onespace;
+		border-radius: $radius;
+		box-shadow: $shadow $color-silver-100;
+	}
+}
+
+#list-posts {
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: $twospace;
+	}
+	li {
+		padding: $onespace;
+		border-radius: $radius;
+		box-shadow: $shadow $color-silver-100;
+	}
+	.wp-block-post-date {
+		margin-block: $onespace;
+		a {
+			background-color: $color-silver-300;
+			border-radius: $radius;
+			padding: $space;
+			text-decoration: none;
+		}
+	}
+}
+
+#sidebar {
+	background-color: $color-silver-950;
+	color: $color-silver-50;
+	padding: $onespace;
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: $twospace;
+	}
+	li {
+		padding: $onespace;
+		border-radius: $radius;
+		border: solid $thinline $color-silver-900;
+	}
+	a,p {
+		color: $color-silver-500;
+	}
+}
+
+#site-footer {
+	width: 100%;
+	height: auto;
+	padding-block: $twospace;
+	p {
+		max-inline-size: none;
+		text-align: center;
+	}
+}
+
