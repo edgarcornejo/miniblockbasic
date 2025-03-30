@@ -6,15 +6,22 @@
  */
 
 ?>
-<!-- wp:group -->
-<div>
-	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Escrito por ', 'miniblockbasic' ); ?></p>
-	<!-- /wp:paragraph -->
-	<!-- wp:post-author-name {"isLink":true} /-->
-	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'en', 'miniblockbasic' ); ?></p>
-	<!-- /wp:paragraph -->
-	<!-- wp:post-terms {"term":"category"} /-->
+
+<div class="date-author-category">
+	<small>
+		<?php esc_html_e( 'Publicado el: ', 'miniblockbasic' ); ?>
+		<!-- wp:post-date /-->
+	</small>
+
+	<small>
+		<?php esc_html_e( 'Escrito por: ', 'miniblockbasic' ); ?>
+		<!-- wp:post-author-name /-->
+	</small>
+
+	<small>
+		<?php esc_html_e( 'En: ', 'miniblockbasic' ); ?>
+		<!-- wp:post-terms {"term":"category"} /-->
+	</small>
 </div>
-<!-- /wp:group -->
+
+

@@ -142,7 +142,7 @@ body {
   background-color: rgb(247, 247, 247);
 }
 
-/* Conteneddor main principal */
+/* Estilos para el conteneddor main principal */
 main {
   width: 100%;
   height: auto;
@@ -167,6 +167,7 @@ main p {
   margin-bottom: clamp(16px, 1vw, 1vw);
 }
 
+/* Estilos el header principal */
 #site-header {
   background-color: rgb(240, 240, 240);
   display: -webkit-box;
@@ -186,6 +187,7 @@ main p {
   margin: 0;
 }
 
+/* Estilos el menu principal */
 #site-header nav a {
   text-transform: uppercase;
   font-weight: 600;
@@ -196,6 +198,7 @@ main p {
   color: rgb(170, 170, 170);
 }
 
+/* Estilos la secccion de descripción en la home */
 #description {
   background-color: rgb(227, 227, 227);
 }
@@ -207,8 +210,9 @@ main p {
   text-align: center;
 }
 
+/* Estilos la secccion de servicios en la home */
 #services h3 {
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(227, 227, 227);
   color: rgb(51, 51, 51);
   text-align: center;
 }
@@ -226,6 +230,7 @@ main p {
           box-shadow: 0 clamp(1px, 0.2vw, 0.2vw) clamp(3px, 0.4vw, 0.4vw) rgb(240, 240, 240);
 }
 
+/* Estilos para el lista de posts */
 #list-posts ul {
   display: -ms-grid;
   display: grid;
@@ -248,6 +253,89 @@ main p {
   text-decoration: none;
 }
 
+/* Estilos para las entradas individuales */
+.post h1 {
+  font-size: clamp(24px, 2vw, 2vw);
+  font-weight: 700;
+  margin: 0;
+}
+
+.date-author-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(16px, 1vw, 1vw);
+  padding: clamp(16px, 1vw, 1vw);
+  background-color: rgb(227, 227, 227);
+  border-radius: clamp(6px, 0.4vw, 0.4vw);
+}
+.date-author-category small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tags div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.tags a {
+  background-color: rgb(240, 240, 240);
+  border-radius: clamp(6px, 0.4vw, 0.4vw);
+  padding: clamp(8px, 0.5vw, 0.5vw);
+  text-decoration: none;
+}
+
+#navegation-by-post {
+  padding: clamp(16px, 1vw, 1vw);
+  margin-block: clamp(16px, 1vw, 1vw);
+  background-color: rgb(227, 227, 227);
+  border-radius: clamp(6px, 0.4vw, 0.4vw);
+}
+
+#comments .comment {
+  background-color: rgb(240, 240, 240);
+  padding-block: clamp(8px, 0.5vw, 0.5vw);
+  margin-block: clamp(16px, 1vw, 1vw);
+}
+
+/* Estilos de pagina 404 */
+#error-404 header {
+  position: relative;
+}
+#error-404 h1 {
+  color: rgb(247, 247, 247);
+  font-size: clamp(36px, 3vw, 3vw);
+  font-weight: 700;
+  margin: 0;
+  position: absolute;
+  bottom: clamp(16px, 1vw, 1vw);
+  left: clamp(16px, 1vw, 1vw);
+}
+#error-404 img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  aspect-ratio: 6/1;
+  margin-block: clamp(16px, 1vw, 1vw);
+}
+
+/* Estilos para el sidebar principal */
 #sidebar {
   background-color: rgb(51, 51, 51);
   color: rgb(247, 247, 247);
@@ -268,6 +356,7 @@ main p {
   color: rgb(170, 170, 170);
 }
 
+/* Estilos para el footer principal */
 #site-footer {
   width: 100%;
   height: auto;

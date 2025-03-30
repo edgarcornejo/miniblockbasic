@@ -67,7 +67,7 @@ body {
 	background-color: $color-silver-50;
 }
 
-/* Conteneddor main principal */
+/* Estilos para el conteneddor main principal */
 main {
 	width: 100%;
 	height: auto;
@@ -92,6 +92,7 @@ main {
 	}
 }
 
+/* Estilos el header principal */
 #site-header {
 	background-color: $color-silver-100;
 	display: flex;
@@ -105,6 +106,7 @@ main {
 	}
 }
 
+/* Estilos el menu principal */
 #site-header nav {
 	a {
 		text-transform: uppercase;
@@ -116,6 +118,7 @@ main {
 	}
 }
 
+/* Estilos la secccion de descripción en la home */
 #description {
 	background-color: $color-silver-200;
 	header {
@@ -129,9 +132,10 @@ main {
 	}
 }
 
+/* Estilos la secccion de servicios en la home */
 #services {
 	h3 {
-		background-color: $color-silver-300;
+		background-color: $color-silver-200;
 		color: $color-silver-950;
 		text-align: center;
 	}
@@ -148,6 +152,7 @@ main {
 	}
 }
 
+/* Estilos para el lista de posts */
 #list-posts {
 	ul {
 		display: grid;
@@ -170,6 +175,82 @@ main {
 	}
 }
 
+/* Estilos para las entradas individuales */
+.post {
+	h1 {
+		font-size: clamp(24px, 2vw, 2vw);
+		font-weight: 700;
+		margin: 0;
+	}
+}
+
+.date-author-category {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: $onespace;
+	padding: $onespace;
+	background-color: $color-silver-200;
+	border-radius: $radius;
+	small {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.tags {
+	div {
+		display: flex;
+	}
+	a {
+		background-color: $color-silver-100;
+		border-radius: $radius;
+		padding: $space;
+		text-decoration: none;
+	}
+}
+
+#navegation-by-post {
+	padding: $onespace;
+	margin-block: $onespace;
+	background-color: $color-silver-200;
+	border-radius: $radius;
+}
+
+#comments {
+	.comment {
+		background-color: $color-silver-100;
+		padding-block: $space;
+		margin-block: $onespace;
+	}
+}
+
+/* Estilos de pagina 404 */
+#error-404 {
+	header {
+		position: relative;
+	}
+	h1 {
+		color: $color-silver-50;
+		font-size: clamp(36px, 3vw, 3vw);
+		font-weight: 700;
+		margin: 0;
+		position: absolute;
+		bottom: $onespace;
+		left: $onespace;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		object-position: center;
+		aspect-ratio: 6/1;
+		margin-block: $onespace;
+	}
+}
+
+/* Estilos para el sidebar principal */
 #sidebar {
 	background-color: $color-silver-950;
 	color: $color-silver-50;
@@ -189,6 +270,7 @@ main {
 	}
 }
 
+/* Estilos para el footer principal */
 #site-footer {
 	width: 100%;
 	height: auto;
@@ -198,4 +280,3 @@ main {
 		text-align: center;
 	}
 }
-

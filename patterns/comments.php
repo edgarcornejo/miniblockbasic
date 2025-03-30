@@ -5,44 +5,39 @@
  * Categories: text
  * Block Types: core/comments
  */
-
 ?>
-<!-- wp:comments {"className":"wp-block-comments-query-loop"} -->
-<div>
-	<!-- wp:heading -->
-	<h2><?php esc_html_e( 'Comentarios', 'miniblockbasic' ); ?></h2>
-	<!-- /wp:heading -->
-	<!-- wp:comments-title {"level":3} /-->
+
+<article>
+	<header>
+		<h2><?php esc_html_e( 'Comentarios', 'miniblockbasic' ); ?></h2>
+		<!-- wp:comments-title {"level":3} /-->
+	</header>
+
 	<!-- wp:comment-template -->
-	<!-- wp:group -->
-	<div>
+	<div class="comment">
+		<!-- wp:comment-author-name /-->
+		<!-- wp:avatar {"size":48} /-->
 		<!-- wp:group -->
-		<div>
-			<!-- wp:avatar {"size":50} /-->
+		<div class="date-author-category">
+			<!-- wp:comment-content /-->
+			<!-- wp:comment-date /-->
 			<!-- wp:group -->
 			<div>
-				<!-- wp:comment-date /-->
-				<!-- wp:comment-author-name /-->
-				<!-- wp:comment-content /-->
-				<!-- wp:group -->
-				<div>
-					<!-- wp:comment-edit-link /-->
-					<!-- wp:comment-reply-link /-->
-				</div>
-				<!-- /wp:group -->
+				<!-- wp:comment-edit-link /-->
+				<!-- wp:comment-reply-link /-->
 			</div>
 			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</div>
-	<!-- /wp:group -->
 	<!-- /wp:comment-template -->
 
 	<!-- wp:comments-pagination -->
-	<!-- wp:comments-pagination-previous /-->
-	<!-- wp:comments-pagination-next /-->
+	<div id="#navegation-by-post">
+		<!-- wp:comments-pagination-previous /-->
+		<!-- wp:comments-pagination-next /-->
+	</div>
 	<!-- /wp:comments-pagination -->
 
 	<!-- wp:post-comments-form /-->
-</div>
-<!-- /wp:comments -->
+</article>
