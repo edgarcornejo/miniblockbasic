@@ -7,11 +7,9 @@
 
 ?>
 
-<h2><?php esc_html_e( 'Publicaciones', 'miniblockbasic' ); ?></h2>
-
-
 <!-- wp:query {"query":{"perPage":4,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":null,"parents":[]}} -->
 <div>
+	<h3><?php esc_html_e( 'Publicaciones', 'miniblockbasic' ); ?></h3>
 	<!-- wp:post-template -->
 		<!-- wp:group -->
 		<div>
@@ -28,3 +26,6 @@
 	<!-- /wp:query-no-results -->
 </div>
 <!-- /wp:query -->
+
+<h3><?php esc_html_e( 'Buscar', 'miniblockbasic' ); ?></h3>
+<!-- wp:pattern {"slug":"miniblockbasic/hidden-search"} /-->

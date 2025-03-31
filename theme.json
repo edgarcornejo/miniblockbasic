@@ -10,14 +10,19 @@
 			"title": "Header"
 		},
 		{
-			"area": "footer",
-			"name": "footer",
-			"title": "Footer"
+			"area": "header",
+			"name": "header-home",
+			"title": "Header Home"
 		},
 		{
 			"area": "sidebar",
 			"name": "sidebar",
 			"title": "Sidebar"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
 		},
 		{
 			"area": "uncategorized",

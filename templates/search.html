@@ -1,14 +1,21 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:group {"tagName":"main"} -->
+<!-- wp:group -->
 <main>
-	<!-- wp:query-title {"type":"search"} /-->
-	<!-- wp:pattern {"slug":"miniblockbasic/hidden-search"} /-->
-	<!-- wp:pattern {"slug":"miniblockbasic/template-query-loop"} /-->
-	<!-- wp:pattern {"slug":"miniblockbasic/more-posts"} /-->
+	<section>
+		<article>
+			<header>
+				<!-- wp:query-title {"type":"search"} /-->
+			</header>
+			<!-- wp:pattern {"slug":"miniblockbasic/hidden-search"} /-->
+			<!-- wp:pattern {"slug":"miniblockbasic/template-query-loop"} /-->
+		</article>
+	</section>
 </main>
 <!-- /wp:group -->
 
-<!-- wp:template-part {"slug":"sidebar"} /-->
+<aside id="sidebar">
+	<!-- wp:template-part {"slug":"sidebar"} /-->
+</aside>
 
 <!-- wp:template-part {"slug":"footer"} /-->

@@ -82,7 +82,7 @@ main {
 	}
 	header {
 		margin-block: $onespace;
-		h2 {
+		h1 {
 			font-size: clamp(20px, 1.6vw, 1.6vw);
 			font-weight: 300;
 		}
@@ -99,7 +99,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	padding-inline: $onespace;
-	h1 {
+	h1,h2 {
 		font-size: clamp(24px, 2vw, 2vw);
 		font-weight: 700;
 		margin: 0;

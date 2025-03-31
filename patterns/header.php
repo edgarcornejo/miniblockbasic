@@ -9,7 +9,7 @@
 ?>
 
 <div id="site-header">
-	<!-- wp:site-title /-->
+	<!-- wp:site-title {"level":2} /-->
 
 	<!-- wp:navigation /-->
 </div>

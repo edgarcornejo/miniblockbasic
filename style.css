@@ -159,7 +159,7 @@ main article {
 main header {
   margin-block: clamp(16px, 1vw, 1vw);
 }
-main header h2 {
+main header h1 {
   font-size: clamp(20px, 1.6vw, 1.6vw);
   font-weight: 300;
 }
@@ -181,7 +181,7 @@ main p {
           align-items: center;
   padding-inline: clamp(16px, 1vw, 1vw);
 }
-#site-header h1 {
+#site-header h1, #site-header h2 {
   font-size: clamp(24px, 2vw, 2vw);
   font-weight: 700;
   margin: 0;
