@@ -1,6 +1,6 @@
 # Mini Block Basic
 
-Base para que crees tu theme de WordPress en bloques.
+Base para que crear themes de WordPress en bloques - **En desarrollo**.
 
 ## Desarrollo
 
